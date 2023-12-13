@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCUPK - MCU互相PK</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #36d1dc, #5b86e5);
+            color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            animation: float 5s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        .title {
+            font-size: 28px;
+            color: #a8eb12;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .feature-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        a {
+            color: #abd9ff;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffc107;
+            text-decoration: none;
+        }
+        .join {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">欢迎来到MCUPK</div>
+        <p>MCUPK，意即MCU互相PK，目前正在筹备中。</p>
+        <h3>接下来的计划：</h3>
+        <ul class="feature-list">
+            <li>波形分享</li>
+            <li>可下载原始波形数据</li>
+            <li>可按条件筛选排序</li>
+            <li>展示板子类型、测试时的工作状态、厂家信息</li>
+        </ul>
+        <p>我们希望可以辅助大家对自己的产品进行对比，也帮助优秀产品为大家所了解。</p>
+        <div class="contact-info">
+            <div class="join">加入我们</div>
+            <p>感兴趣可以加入我们的交流群：</p>
+            <p>QQ群：807846388</p>
+            <p>微信群请扫码：<a href="https://wiki.luatos.com/_images/wechat.png" target="_blank">点击这里查看二维码</a></p>
+        </div>
+    </div>
+</body>
+</html>
